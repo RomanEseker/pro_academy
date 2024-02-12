@@ -2,7 +2,7 @@ package com.hotmail.work.roman;
 
 public class Group {
 	private String groupName = "zalupa";
-	Student[] students = new Student[10];
+	private Student[] students = new Student[10];
 
 	public Group() {
 		super();
@@ -43,7 +43,7 @@ public class Group {
 	public Student searchStudentByLastName(String lastName) throws StudentNotFoundException {
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] != null) {
-				if (students[i].getLastname() == lastName) {
+				if (students[i].getLastname().equals(lastName)) {
 					return students[i];
 				}
 			}
@@ -86,7 +86,7 @@ public class Group {
 		}
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] != null) {
-				text+= "Student=[" + "id=" + students[i].getId() + ", lastName=" + students[i].getLastname()
+				text+= "Student=[" + "id=" + students[i].getId() + ", gender=" + students[i].getGender() + ", lastName=" + students[i].getLastname()
 						+ ", name=" + students[i].getName() + ", group=" + students[i].getGroupName() + "]" + "\n";
 			}
 		}

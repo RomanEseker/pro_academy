@@ -31,12 +31,13 @@ public class Student extends Human {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id 
-				+ ", lastname=" + getLastname()
-				+ ", fistname=" + getName()
-				+ ", groupName=" + groupName 
-				+ "]";
+		return "Student [id=" + id + ", groupName=" + groupName + ", gender=" + gender + ", getId()=" + getId()
+				+ ", getGroupName()=" + getGroupName() + ", getGender()=" + getGender() + ", getName()=" + getName()
+				+ ", getLastname()=" + getLastname() + ", toString()=" + super.toString() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + "]";
 	}
+
+	
 	
 
 	
